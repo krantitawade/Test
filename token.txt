@@ -1,3 +1,0 @@
-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
-
-git remote set-url origin https://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@github.com/krantitawade/Test
