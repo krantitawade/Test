@@ -39,6 +39,71 @@ months.map(function(month, index) {
 });
 console.log(months);
 
-  </script>
+
+
+
+const scores = [40, 55, 65, 75, 96];
+
+
+let total = 0;
+let total1 = 0;
+
+scores.forEach((currentElement) => { 
+  total += currentElement;
+});
+
+scores.forEach(function(currentElement){
+  total1 += currentElement;
+})
+console.log(total);
+
+console.log(total1);
+
+
+const staffsDetails = [
+  { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
+  { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
+  { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" },
+  { name: "Jane Doe", age: 24, salary: 4200, currency: "USD" }
+];
+ 
+
+
+staffsDetails.forEach(function({salary}){
+  console.log(salary + " RS"); // "RS"
+})
+
+
+staffsDetails.forEach(({salary}) =>{
+  console.log(salary + " USD"); // " USD"
+})
+
+
+
+
+
+let totalSalary = 0;
+staffsDetails.forEach(({salary}) => {
+  totalSalary += salary;
+});
+
+
+console.log(totalSalary + " USD"); // "14900 USD"
+
+
+
+
+staffsDetails.forEach(function(currentElement){
+
+  if(currentElement.salary > 3000) {
+    console.log(currentElement.name);
+  } 
+
+});
+
+
+ 
+
+</script>
 </body>
 </html>
