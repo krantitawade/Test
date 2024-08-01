@@ -11,33 +11,15 @@
 
   <script>
 
-function func() {
-
-// Original array
-const items = [12, 24, 36];
-const copy = [];
-items.forEach(function (item) {
-    copy.push(item+ 1);
-});
-console.log(copy);
-console.log(items);
+let object = {
+    name: "Nishant",
+    age: 24, 
+    salary: 300,
+    height: '20 meters',
+    weight: '70 KG'
 }
-func();
 
 
-const months = ['January', 'February', 'March', 'April'];
-
-months.forEach(function(month, index ) {
-  console.log("Using foreach" + " " + index + " " +  month); 
-});
-console.log(months);
-
-
-
-months.map(function(month, index) { 
-  console.log("Using map" + " " + index + " " +  month);
-});
-console.log(months);
 
   </script>
 </body>

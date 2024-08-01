@@ -102,7 +102,36 @@ staffsDetails.forEach(function(currentElement){
 });
 
 
+const marks = [1, 2, 3, 4];
+
+marks.forEach(function(mark) {
+
+  console.log(mark);
+  if(mark == 70) {
+    console.log("Congratulations you are pass");
+  }
+});
+
+
+
+
+
+let obtMark = marks.forEach(function() {
+ return 3;
+});
+
+console.log(obtMark);
+
+
+let modarray = marks.map(function(element, index, array) { 
+
+  console.log(this);
+
+});
+
+console.log(modarray);
  
+
 
 </script>
 </body>
